@@ -1,4 +1,4 @@
-
+pip install inquirer
 from pprint import pprint
 
 import inquirer
