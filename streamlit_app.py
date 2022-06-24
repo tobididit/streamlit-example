@@ -1,38 +1,90 @@
-from collections import namedtuple
-import altair as alt
-import math
-import pandas as pd
-import streamlit as st
 
-"""
-# Welcome to Streamlit!
+from pprint import pprint
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
-
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
-
-In the meantime, below is an example of what you can do with just a few lines of code:
-"""
+import inquirer
 
 
-with st.echo(code_location='below'):
-    total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
-    num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
+questions = [
+  inquirer.List('nodename',
+                message="What nodename would you be using do you need?",
+                choices=["gpu-eu-w2a", "gpu-eu-w2b", "pool-infra", "pool-micro-services-cpu", "pool-pulsar"],
+            ),
+]
+answers = inquirer.prompt(questions)
+pprint(answers["choices"])
 
-    Point = namedtuple('Point', 'x y')
-    data = []
 
-    points_per_turn = total_points / num_turns
 
-    for curr_point_num in range(total_points):
-        curr_turn, i = divmod(curr_point_num, points_per_turn)
-        angle = (curr_turn + 1) * 2 * math.pi * i / points_per_turn
-        radius = curr_point_num / total_points
-        x = radius * math.cos(angle)
-        y = radius * math.sin(angle)
-        data.append(Point(x, y))
 
-    st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
-        .mark_circle(color='#0068c9', opacity=0.5)
-        .encode(x='x:Q', y='y:Q'))
+numberofnodes = input ("how many nodes are needed?")
+
+questions = [
+  inquirer.List('machinetype',
+                message="What machinetype would you be using do you need?",
+                choices=["n1-standard-4", "n2-standard-4", "n2-standard-16"],
+            ),
+]
+answers = inquirer.prompt(questions)
+print (answers["machinetype"])
+
+
+
+pphinstance  = input ("how many pph/instance?")
+
+minuser  = input ("how many min users?")
+
+maxuser  = input ("how many max users?")
+
+
+guessmax  = input ("guess how many max users?")
+
+minuserpernode  = input ("minuser / float(numberofnodes)")
+
+
+users  = input ("guess how many max users?")
+
+
+
+questions = [
+  inquirer.List('services',
+                message="What services would you be using?",
+                choices=["polyp-det", "ms-all", "websocket, webserver", "freeze, image storage, prediction storage", "pulsar"],
+            ),
+]
+answers = inquirer.prompt(questions)
+print (answers["machinetype"])
+
+
+
+users  = input ("guess how many max users?")
+
+runtimedayinhrs  = input ("what is the runtime daily in hours?")
+
+daysperweek  = input ("how many days in a week?")
+
+procedurelength  = input ("procedure length in hrs?")
+
+
+
+
+
+
+
+print(numberofnodes)
+
+
+
+
+
+nodeneeded = {
+    print (answers["nodename"])
+(users / minuserpernode(100))
+
+}
+
+costpermonth = {
+    print (answers["costpermonth"])
+           (nodeneeded * runtimedayinhrs * daysperweek * 4.345 * pphinstance)
+
+
+}
