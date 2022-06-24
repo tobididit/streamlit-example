@@ -1,17 +1,17 @@
-pip install inquirer
-from pprint import pprint
+# pip install inquirer
+# from pprint import pprint
 
-import inquirer
+# import inquirer
 
 
-questions = [
-  inquirer.List('nodename',
-                message="What nodename would you be using do you need?",
-                choices=["gpu-eu-w2a", "gpu-eu-w2b", "pool-infra", "pool-micro-services-cpu", "pool-pulsar"],
-            ),
-]
-answers = inquirer.prompt(questions)
-pprint(answers["choices"])
+# questions = [
+#   inquirer.List('nodename',
+#                 message="What nodename would you be using do you need?",
+#                 choices=["gpu-eu-w2a", "gpu-eu-w2b", "pool-infra", "pool-micro-services-cpu", "pool-pulsar"],
+#             ),
+# ]
+# answers = inquirer.prompt(questions)
+# pprint(answers["choices"])
 
 
 
