@@ -15,11 +15,11 @@ Nodename = st.selectbox("Nodename: ",
 # print the selected hobby
 st.write("Your selected Nodename is: ", Nodename)
 
-Node = st.selectbox("Nodename: ",
+Node = st.selectbox("MachineType: ",
 					['gpu-u-w2a', 'gpu-u-w2b', 'poo-infra', 'pol-micro-services-cpu', 'poo-pulsar'])
 
 # print the selected hobby
-st.write("Your selected Nodename is: ", Node)
+st.write("Your selected MachineType is: ", Node)
 
 
 
