@@ -31,17 +31,6 @@ if(st.button('Submit')):
 	st.success(result)
 	
 	
-	# Selection box
-
-# first argument takes the titleof the selectionbox
-# second argument takes options
-
-	machine = st.selectbox("machine: ",
-					['n1-standard-4', 'n2-standard-4', 'n2-standard-16'])
-
-# print the selected hobby
-st.write("Your selected machine is: ", machine)
-	
 	
 
 	# slider
