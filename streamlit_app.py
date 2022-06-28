@@ -16,7 +16,7 @@ Nodename = st.selectbox("Nodename: ",
 st.write("Your selected Nodename is: ", Nodename)
 
 Node = st.selectbox("Nodename: ",
-					['gpu-eu-w2a', 'gpu-eu-w2b', 'pool-infra', 'pool-micro-services-cpu', 'pool-pulsar'])
+					['gpu-u-w2a', 'gpu-u-w2b', 'poo-infra', 'pol-micro-services-cpu', 'poo-pulsar'])
 
 # print the selected hobby
 st.write("Your selected Nodename is: ", Node)
