@@ -30,11 +30,11 @@ if(st.button('Submit')):
 	result = numberofnodes.title()
 	st.success(result)
 	
-	machinetype = st.selectbox("machineType: ",
+	machine = st.selectbox("machine: ",
 					['n1-standard-4', 'n2-standard-4', 'n2-standard-16'])
 
 # print the selected hobby
-st.write("Your selected MachineType is: ", machinetype)
+st.write("Your selected MachineType is: ", machine)
 	
 	
 
