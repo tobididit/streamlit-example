@@ -34,7 +34,7 @@ if(st.button('Submit')):
 					['n1-standard-4', 'n2-standard-4', 'n2-standard-16'])
 
 # print the selected hobby
-st.write("Your selected MachineType is: ", machine)
+st.write("Your selected machine is: ", machine)
 	
 	
 
