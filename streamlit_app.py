@@ -10,13 +10,13 @@ st.title("Thanks for choosing to use Odin's Cloud Cost Calculator !!!")
 # first argument takes the titleof the selectionbox
 # second argument takes options
 Nodename = st.selectbox("Nodename: ",
-					['n1-standard-4', 'n2-standard-4', 'pool-pulsar'])
+					['gpu-eu-w2a', 'gpu-eu-w2b', 'pool-infra', 'pol-micro-services-cpu', 'pool-pulsar'])
 
 # print the selected hobby
 st.write("Your selected Nodename is: ", Nodename)
 
 Node = st.selectbox("MachineType: ",
-					['gpu-u-w2a', 'gpu-u-w2b', 'poo-infra', 'pol-micro-services-cpu', 'poo-pulsar'])
+					 ['n1-standard-4', 'n2-standard-4', 'n2-standard-16'])
 
 # print the selected hobby
 st.write("Your selected MachineType is: ", Node)
