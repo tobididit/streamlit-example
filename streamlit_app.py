@@ -29,6 +29,14 @@ numberofnodes = st.text_input("how many nodes are needed?", "Type Here ...")
 if(st.button('Submit')):
 	result = numberofnodes.title()
 	st.success(result)
+	
+	MachineType = st.selectbox("MachineType: ",
+					['n1-standard-4', 'n2-standard-4', 'n2-standard-16'])
+
+# print the selected hobby
+st.write("Your selected MachineType is: ", MachineType)
+	
+	
 
 	# slider
 
