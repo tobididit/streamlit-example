@@ -15,11 +15,11 @@ Nodename = st.selectbox("Nodename: ",
 # print the selected hobby
 st.write("Your selected Nodename is: ", Nodename)
 
-Node = st.selectbox("MachineType: ",
+MT = st.selectbox("MachineType: ",
 					 ['n1-standard-4', 'n2-standard-4', 'n2-standard-16'])
 
-# print the selected hobby
-st.write("Your selected MachineType is: ", Node)
+# print the selected MT
+st.write("Your selected MachineType is: ", MT)
 
 
 
@@ -34,6 +34,14 @@ numberofnodes = st.text_input("how many nodes are needed?", "Type Here ...")
 # .title() is used to get the input text string
 if(st.button('Submit')):
 	result = numberofnodes.title()
+	st.success(result)
+	
+	pphinstance = st.text_input("how many pph/instance?", "Type Here ...")
+
+# display the name when the submit button is clicked
+# .title() is used to get the input text string
+if(st.button('Submit')):
+	result = pphinstance.title()
 	st.success(result)
 	
 	
