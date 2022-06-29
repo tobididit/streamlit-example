@@ -46,7 +46,7 @@ Services = st.selectbox("Services: ",
 st.write("The service you are using is: ", Services)
 	
 	
-	
+	users = st.number_input("guess how many users?")
 	
 
 	# slider
@@ -66,3 +66,10 @@ st.text('Selected: {}'.format(days))
 
 
 procedurelength = st.number_input("What is the proocedure length in hours?")
+
+
+
+
+nodeneeded = (users / minuer)
+
+st.text("Your Node needed is {}.".format(nodeneeded))
