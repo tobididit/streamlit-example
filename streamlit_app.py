@@ -63,3 +63,6 @@ st.text('Selected: {}'.format(hours))
 
 days = st.slider("How many days in a week", 1, 7)
 st.text('Selected: {}'.format(days))
+
+
+procedurelength = st.number_input("What is the proocedure length in hours?")
