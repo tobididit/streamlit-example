@@ -54,10 +54,12 @@ st.write("The service you are using is: ", Services)
 # first argument takes the title of the slider
 # second argument takes the starting of the slider
 # last argument takes the end number
-level = st.slider("Select the level", 1, 5)
+hours = st.slider("How many hours in a day", 1, 24)
 
 # print the level
 # format() is used to print value
 # of a variable at a specific position
-st.text('Selected: {}'.format(level))
+st.text('Selected: {}'.format(hours))
 
+days = st.slider("How many days in a week", 1, 7)
+st.text('Selected: {}'.format(days))
