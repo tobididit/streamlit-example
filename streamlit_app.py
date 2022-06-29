@@ -46,7 +46,7 @@ Services = st.selectbox("Services: ",
 st.write("The service you are using is: ", Services)
 	
 	
-	users = st.number_input("guess how many users?")
+users = st.number_input("guess how many users?")
 	
 
 	# slider
