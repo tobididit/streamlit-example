@@ -42,7 +42,7 @@ if(st.button('Submit')):
 # .title() is used to get the input text string
 if(st.button('Submit')):
 	result = pph.title()
-	st.success(result)
+	
 	
 	
 	
