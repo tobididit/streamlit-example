@@ -18,6 +18,7 @@ st.write("Your selected Nodename is: ", Nodename)
 MT = st.selectbox("MachineType: ",
 					 ['n1-standard-4', 'n2-standard-4', 'n2-standard-16'])
 
+
 # print the selected MT
 st.write("Your selected MachineType is: ", MT)
 
@@ -36,6 +37,13 @@ maxuser = st.number_input("how many maxuser?")
 minuser = st.number_input("how many minuser?")
 
 guessmax = st.number_input("guess how many max users?")
+
+Services = st.selectbox("Services: ",
+					 ['polyp-det', 'ms-all', 'websocket/webserver', 'freeze/image/storage', 'prediction storage', 'pulsar'])
+
+
+# print the selected MT
+st.write("The service you are using is: ", Services)
 	
 	
 	
