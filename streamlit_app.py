@@ -36,12 +36,12 @@ if(st.button('Submit')):
 	result = numberofnodes.title()
 	st.success(result)
 	
-	pphinstance = st.text_input("how many pph/instance?", "Type Here ...")
+	pph = st.text_input("how many pph/instance?", "Type Here ...")
 
 # display the name when the submit button is clicked
 # .title() is used to get the input text string
 if(st.button('Submit')):
-	result = pphinstance.title()
+	result = pph.title()
 	st.success(result)
 	
 	
