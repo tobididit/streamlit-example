@@ -27,7 +27,7 @@ st.write("Your selected MachineType is: ", MT)
 
 	
 	# TAKE WEIGHT INPUT in kgs
-number of nodes = st.number_input("how many nodes are needed?")	
+numberofnodes = st.number_input("how many nodes are needed?")	
 	
 pphinstance = st.number_input("how many pph/instance?")
 
