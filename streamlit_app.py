@@ -36,12 +36,16 @@ if(st.button('Submit')):
 	result = numberofnodes.title()
 	st.success(result)
 	
-	pph = st.text_input("how many pph/instance?", "Type Here ...")
 
-# display the name when the submit button is clicked
-# .title() is used to get the input text string
-if(st.button('Submit')):
-	result = pph.title()
+	
+	# TAKE WEIGHT INPUT in kgs
+pphinstance = st.number_input("how many pph/instance?")
+
+maxuser = st.number_input("how many maxuser?")
+
+minuser = st.number_input("how many minuser?")
+
+guessmax = st.number_input("guess how many max users?")
 	
 	
 	
