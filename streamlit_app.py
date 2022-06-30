@@ -44,13 +44,9 @@ with st.form("TotalCost"):
 	st.write("Your selected MachineType is: ", MT)
 
 
-	# TAKE WEIGHT INPUT in kgs
-	numberofnodes = st.number_input("how many nodes are needed?")	
+	# TAKE INPUT in figures needed
 
 	pphinstance = st.number_input("how many pph/instance?")
-
-
-	minuser = st.number_input("how many minuser?")
 
 
 	Services = st.selectbox("Services: ",
@@ -84,5 +80,12 @@ with st.form("TotalCost"):
 
 	submitted = st.form_submit_button("Submit")
 	if submitted:
-		costpermonth = (nodeneeded * hours * days * 4.345 * pphinstance)
+		costpermonth = 0
+		for key, value in nodeholder.items():
+			costpermonth += (value * hours * days * 4.345 * pphinstance)
 		st.text("Your cost per month is {}.".format(costpermonth))
+		
+		procedures = (users * hours * days * 4.345 / procedurelength)
+		st.text ("Procedures is {}.".format(procedures))
+		priceperprocedure = (costpermonth / procedures)
+		st.text ("Price per Procedures is {}.".format(priceperprocedure))
