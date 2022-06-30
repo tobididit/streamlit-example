@@ -1,5 +1,6 @@
 # import module
 import streamlit as st
+import math
 
 @st.cache(allow_output_mutation=True)
 def persistdata():
@@ -26,7 +27,7 @@ with st.form("NodeToBeUsed"):
 	users = st.number_input("guess how many users?")
 	submitted = st.form_submit_button("Submit")
 	if submitted:
-		nodeneeded = (users / minuser)
+		nodeneeded = math.ceil(users / minuser)
 		st.text("Your Node needed is {}.".format(nodeneeded))
 		nodeholder[Nodename] = nodeneeded
 		st.text("Your Node needed is {}.".format(nodeholder))
@@ -48,12 +49,9 @@ with st.form("TotalCost"):
 
 	pphinstance = st.number_input("how many pph/instance?")
 
-	maxuser = st.number_input("how many maxuser?")
-
 
 	minuser = st.number_input("how many minuser?")
 
-	guessmax = st.number_input("guess how many max users?")
 
 	Services = st.selectbox("Services: ",
 						 ['polyp-det', 'ms-all', 'websocket/webserver', 'freeze/image/storage', 'prediction storage', 'pulsar'])
