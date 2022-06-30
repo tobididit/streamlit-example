@@ -70,6 +70,6 @@ procedurelength = st.number_input("What is the proocedure length in hours?")
 
 
 
-nodeneeded = (users + minuser)
+nodeneeded = (users / minuser)
 
 st.text("Your Node needed is {}.".format(nodeneeded))
