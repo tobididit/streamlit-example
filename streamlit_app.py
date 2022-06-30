@@ -1,13 +1,17 @@
 # import module
 import streamlit as st
 
+@st.cache(allow_output_mutation=True)
+def persistdata():
+    return {}
+
 # Title
 st.title("Thanks for choosing to use Odin's Cloud Cost Calculator !!!")
 
 
 
 # Selection box
-nodeholder = {}
+nodeholder = persistdata()
 with st.form("NodeToBeUsed"):
 
 	# first argument takes the titleof the selectionbox
