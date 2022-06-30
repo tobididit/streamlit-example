@@ -5,15 +5,26 @@ import streamlit as st
 st.title("Thanks for choosing to use Odin's Cloud Cost Calculator !!!")
 
 
+
 # Selection box
+nodeholder = {}
+with st.form("Calculator"):
 
-# first argument takes the titleof the selectionbox
-# second argument takes options
-Nodename = st.selectbox("Nodename: ",
-					['gpu-eu-w2a', 'gpu-eu-w2b', 'pool-infra', 'pol-micro-services-cpu', 'pool-pulsar'])
+	# first argument takes the titleof the selectionbox
+	# second argument takes options
+	Nodename = st.selectbox("Nodename: ",
+						['gpu-eu-w2a', 'gpu-eu-w2b', 'pool-infra', 'pol-micro-services-cpu', 'pool-pulsar'])
 
-# print the selected hobby
-st.write("Your selected Nodename is: ", Nodename)
+	# print the selected hobby
+	st.write("Your selected Nodename is: ", Nodename)
+	
+	minuser = st.number_input("how many minuser?")
+	users = st.number_input("guess how many users?")
+	submitted = st.form_submit_button("Submit")
+        if submitted:
+		nodeneeded = (users / minuser)
+		st.text("Your Node needed is {}.".format(nodeneeded))
+		nodeholder[Nodename] = nodeneeded
 
 MT = st.selectbox("MachineType: ",
 					 ['n1-standard-4', 'n2-standard-4', 'n2-standard-16'])
@@ -22,17 +33,14 @@ MT = st.selectbox("MachineType: ",
 # print the selected MT
 st.write("Your selected MachineType is: ", MT)
 
-
-
 	
-
-	
-	# TAKE WEIGHT INPUT in kgs
+# TAKE WEIGHT INPUT in kgs
 numberofnodes = st.number_input("how many nodes are needed?")	
 	
 pphinstance = st.number_input("how many pph/instance?")
 
 maxuser = st.number_input("how many maxuser?")
+
 
 minuser = st.number_input("how many minuser?")
 
