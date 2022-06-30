@@ -25,6 +25,8 @@ with st.form("NodeToBeUsed"):
 		nodeneeded = (users / minuser)
 		st.text("Your Node needed is {}.".format(nodeneeded))
 		nodeholder[Nodename] = nodeneeded
+		st.text("Your Node needed is {}.".format(nodeholder))
+		
 		
 with st.form("TotalCost"):
 	
