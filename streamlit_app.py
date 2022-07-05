@@ -20,7 +20,7 @@ with st.form("costinmonth"):
   "pphinstance": 0.52,
   "minuser": 4,
   "guessmax": 5,
-  "nodeneeded": 5,
+  "nodeneeded": 100,
   "minuserpernode": 1
 }
 # print(gpueuw2a["year"])
