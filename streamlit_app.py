@@ -13,7 +13,7 @@ st.title("Thanks for choosing to use Odin's Cloud Cost Calculator !!!")
 
 # Selection box
 totalcost = persistdata()
-with st.form("NodeToBeUsed"):
+with st.form("costinmonth"):
 	
 	gpueuw2a = {
   "nofnodes": "4",
