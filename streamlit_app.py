@@ -16,11 +16,11 @@ totalcost = persistdata()
 with st.form("costinmonth"):
 	
 	gpueuw2a = {
-  "nofnodes": "4",
-  "pphinstance": "0.52",
-  "minuser": "4",
-  "guessmax": "5",
-  "nodeneeded": "5",
+  "nofnodes": 4,
+  "pphinstance": 0.52,
+  "minuser": 4,
+  "guessmax": 5,
+  "nodeneeded": 5,
   "minuserpernode": 1
 }
 # print(gpueuw2a["year"])
@@ -85,7 +85,7 @@ with st.form("costinmonth"):
 	submitted = st.form_submit_button("Submit")
 
 	if submitted:
-		costinmonth = math.ceil((int(gpueuw2a["nodeneeded"]) * hours * days * 4.345 * int(gpueuw2a["pphinstance"])))
+		costinmonth = math.ceil((gpueuw2a["nodeneeded"] * hours * days * 4.345 * gpueuw2a["pphinstance"]))
 		st.text("Cost in a month is {}.".format(costinmonth))
 		totalcost[Nodename] = costinmonth
 		st.text("Cost in a month is {}.".format(totalcost))
