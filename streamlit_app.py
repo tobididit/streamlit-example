@@ -84,7 +84,7 @@ procedurelength = st.number_input("What is the proocedure length in hours?")
 
 submitted = st.form_submit_button("Submit")
 
-	if submitted:
+if submitted:
 		costinmonth = math.ceil((gpueuw2a["nodeneeded" * hours * days * 4.345 * "pphinstance"]))
 		st.text("Your Node needed is {}.".format(costinmonth))
 		totalcost[Nodename] = costinmonth
