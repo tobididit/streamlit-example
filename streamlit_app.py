@@ -87,7 +87,7 @@ with st.form("costinmonth"):
 	if submitted:
 		costinmonth = math.ceil((gpueuw2a["nodeneeded"] * hours * days * 4.345 * gpueuw2a["pphinstance"]))
 		st.text("Cost in a month is {}.".format(costinmonth))
-		totalcost[Nodename] = costinmonth
+		totalcost[costinmonth] = costinmonth
 		st.text("Cost in a month is {}.".format(totalcost))
 
 
