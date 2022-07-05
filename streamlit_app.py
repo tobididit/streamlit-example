@@ -25,7 +25,7 @@ with st.form("costinmonth"):
 }
 # print(gpueuw2a["year"])
 
-gpueuw2b = {
+	gpueuw2b = {
   "nofnodes": "2",
   "pphinstance": "0.52",
   "minuser": "4",
@@ -35,7 +35,7 @@ gpueuw2b = {
 }
 # print(thisdict["year"])
 
-poolinfra = {
+	poolinfra = {
   "nofnodes": "1",
   "pphinstance": "0.2",
   "minuser": "6",
@@ -44,7 +44,7 @@ poolinfra = {
   "minuserpernode": 6
 }
 
-poolmicroservicescpu = {
+	poolmicroservicescpu = {
   "nofnodes": "1",
   "pphinstance": "0.2",
   "minuser": "10",
@@ -53,7 +53,7 @@ poolmicroservicescpu = {
   "minuserpernode": 10
 }
 
-poolpulsar = {
+	poolpulsar = {
   "nofnodes": "1",
   "pphinstance": "0.79",
   "minuser": "5",
@@ -63,32 +63,32 @@ poolpulsar = {
 }
 
 
-users = st.number_input("guess how many users?")
+	users = st.number_input("guess how many users?")
 
 # slider
 
 # first argument takes the title of the slider
 # second argument takes the starting of the slider
 # last argument takes the end number
-hours = st.slider("How many hours in a day", 1, 24)
+	hours = st.slider("How many hours in a day", 1, 24)
 
 # print the level
 # format() is used to print value
 # of a variable at a specific position
-st.text('Selected: {}'.format(hours))
+	st.text('Selected: {}'.format(hours))
 
-days = st.slider("How many days in a week", 1, 7)
-st.text('Selected: {}'.format(days))
+	days = st.slider("How many days in a week", 1, 7)
+	st.text('Selected: {}'.format(days))
 
-procedurelength = st.number_input("What is the proocedure length in hours?")
+	procedurelength = st.number_input("What is the proocedure length in hours?")
 
-submitted = st.form_submit_button("Submit")
+	submitted = st.form_submit_button("Submit")
 
-if submitted:
+	if submitted:
 		costinmonth = math.ceil((gpueuw2a["nodeneeded" * hours * days * 4.345 * "pphinstance"]))
-		st.text("Your Node needed is {}.".format(costinmonth))
+		st.text("Cost in a month is {}.".format(costinmonth))
 		totalcost[Nodename] = costinmonth
-		st.text("Your Node needed is {}.".format(totalcost))
+		st.text("Cost in a month is {}.".format(totalcost))
 
 
 	# first argument takes the titleof the selectionbox
