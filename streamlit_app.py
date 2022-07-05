@@ -82,7 +82,7 @@ st.text('Selected: {}'.format(days))
 
 procedurelength = st.number_input("What is the proocedure length in hours?")
 
-submitted = st.form_submit_button("Submit")
+submitted = st.form_submit_button("Sub")
 
 if submitted:
 		costinmonth = math.ceil((gpueuw2a["nodeneeded" * hours * days * 4.345 * "pphinstance"]))
