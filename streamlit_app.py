@@ -12,7 +12,7 @@ st.title("Thanks for choosing to use Odin's Cloud Cost Calculator !!!")
 
 
 # Selection box
-nodeholder = persistdata()
+totalcost = persistdata()
 with st.form("NodeToBeUsed"):
 	
 	gpueuw2a = {
@@ -81,6 +81,12 @@ days = st.slider("How many days in a week", 1, 7)
 st.text('Selected: {}'.format(days))
 
 procedurelength = st.number_input("What is the proocedure length in hours?")
+
+if submitted:
+		costinmonth = math.ceil((gpueuw2a["nodeneeded" * hours * days * 4.345 * "pphinstance"]))
+		st.text("Your Node needed is {}.".format(costinmonth))
+		totalcost[Nodename] = costinmonth
+		st.text("Your Node needed is {}.".format(totalcost))
 
 
 	# first argument takes the titleof the selectionbox
