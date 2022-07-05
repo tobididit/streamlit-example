@@ -85,7 +85,7 @@ with st.form("costinmonth"):
 	submitted = st.form_submit_button("Submit")
 
 	if submitted:
-		costinmonth = math.ceil((gpueuw2a["nodeneeded" * hours * days * 4.345 * "pphinstance"]))
+		costinmonth = math.ceil((gpueuw2a["nodeneeded"] * hours * days * 4.345 * gpueuw2a["pphinstance"]))
 		st.text("Cost in a month is {}.".format(costinmonth))
 		totalcost[Nodename] = costinmonth
 		st.text("Cost in a month is {}.".format(totalcost))
