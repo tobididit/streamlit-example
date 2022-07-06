@@ -86,10 +86,6 @@ with st.form("costinmonth"):
 
 	if submitted:
 		costinmonth = math.ceil((gpueuw2a["nodeneeded"] * hours * days * 4.345 * gpueuw2a["pphinstance"]))
-		costinmonth = math.ceil((gpueuw2b["nodeneeded"] * hours * days * 4.345 * gpueuw2b["pphinstance"]))
-		costinmonth = math.ceil((poolinfra["nodeneeded"] * hours * days * 4.345 * poolinfra["pphinstance"]))
-		costinmonth = math.ceil((poolmicroservicescpu["nodeneeded"] * hours * days * 4.345 * poolmicroservicescpu["pphinstance"]))
-		costinmonth = math.ceil((poolpulsar["nodeneeded"] * hours * days * 4.345 * poolpulsar["pphinstance"]))
 		st.text("Cost in a month is {}.".format(costinmonth))
 		totalcost[costinmonth] = costinmonth
 		st.text("Cost in a month is {}.".format(totalcost))
