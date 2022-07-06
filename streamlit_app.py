@@ -85,8 +85,13 @@ with st.form("costinmonth"):
 	submitted = st.form_submit_button("Submit")
 
 	if submitted:
-		costinmonth = math.ceil((gpueuw2a["nodeneeded"] * hours * days * 4.345 * gpueuw2a["pphinstance"]))
-		st.text("Cost in a month is {}.".format(costinmonth))
+		cma = math.ceil((gpueuw2a["nodeneeded"] * hours * days * 4.345 * gpueuw2a["pphinstance"]))
+    	cmb = math.ceil((gpueuw2b["nodeneeded"] * hours * days * 4.345 * gpueuw2b["pphinstance"]))
+    	cmc = math.ceil((poolinfra["nodeneeded"] * hours * days * 4.345 * poolinfra["pphinstance"]))
+    	cmd = math.ceil((poolmicroservicescpu["nodeneeded"] * hours * days * 4.345 * poolmicroservicescpu["pphinstance"]))
+  	cme = math.ceil((poolpulsar["nodeneeded"] * hours * days * 4.345 * poolpulsar["pphinstance"]))
+
+		st.text("Cost in a month is {}.".format(cma + cmb + cmc + cmd + cme))
 		totalcost[costinmonth] = costinmonth
 		st.text("Cost in a month is {}.".format(totalcost))
 
