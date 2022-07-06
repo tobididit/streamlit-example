@@ -16,12 +16,12 @@ totalcost = persistdata()
 with st.form("costinmonth"):
 	
 	gpueuw2a = {
-  "nofnodes": 4,
+  "nofnodes": 3,
   "pphinstance": 0.52,
   "minuser": 4,
   "guessmax": 5,
   "nodeneeded": 75,
-  "minuserpernode": 1
+  "minuserpernode": 1.333333333
 }
 # print(gpueuw2a["year"])
 
