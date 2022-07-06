@@ -20,7 +20,7 @@ with st.form("costinmonth"):
   "pphinstance": 0.52,
   "minuser": 4,
   "guessmax": 5,
-  "nodeneeded": 100,
+  "nodeneeded": 75,
   "minuserpernode": 1
 }
 # print(gpueuw2a["year"])
@@ -30,7 +30,7 @@ with st.form("costinmonth"):
   "pphinstance": 0.52,
   "minuser": 4,
   "guessmax": 4,
-  "nodeneeded": 5,
+  "nodeneeded": 50,
   "minuserpernode": 2
 }
 # print(thisdict["year"])
@@ -40,7 +40,7 @@ with st.form("costinmonth"):
   "pphinstance": 0.2,
   "minuser": 6,
   "guessmax": 10,
-  "nodeneeded": 5,
+  "nodeneeded": 17,
   "minuserpernode": 6
 }
 
@@ -49,7 +49,7 @@ with st.form("costinmonth"):
   "pphinstance": 0.2,
   "minuser": 10,
   "guessmax": 100,
-  "nodeneeded": 5,
+  "nodeneeded": 10,
   "minuserpernode": 10
 }
 
@@ -58,7 +58,7 @@ with st.form("costinmonth"):
   "pphinstance": 0.79,
   "minuser": 5,
   "guessmax": 10,
-  "nodeneeded": 5,
+  "nodeneeded": 20,
   "minuserpernode": 5
 }
 
