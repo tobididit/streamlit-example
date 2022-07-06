@@ -26,39 +26,39 @@ with st.form("costinmonth"):
 # print(gpueuw2a["year"])
 
 	gpueuw2b = {
-  "nofnodes": "2",
-  "pphinstance": "0.52",
-  "minuser": "4",
-  "guessmax": "4",
-  "nodeneeded": "5",
+  "nofnodes": 2,
+  "pphinstance": 0.52,
+  "minuser": 4,
+  "guessmax": 4,
+  "nodeneeded": 5,
   "minuserpernode": 2
 }
 # print(thisdict["year"])
 
 	poolinfra = {
-  "nofnodes": "1",
-  "pphinstance": "0.2",
-  "minuser": "6",
-  "guessmax": "10",
-  "nodeneeded": "5",
+  "nofnodes": 1,
+  "pphinstance": 0.2,
+  "minuser": 6,
+  "guessmax": 10,
+  "nodeneeded": 5,
   "minuserpernode": 6
 }
 
 	poolmicroservicescpu = {
-  "nofnodes": "1",
-  "pphinstance": "0.2",
-  "minuser": "10",
-  "guessmax": "100",
-  "nodeneeded": "5",
+  "nofnodes": 1,
+  "pphinstance": 0.2,
+  "minuser": 10,
+  "guessmax": 100,
+  "nodeneeded": 5,
   "minuserpernode": 10
 }
 
 	poolpulsar = {
-  "nofnodes": "1",
-  "pphinstance": "0.79",
-  "minuser": "5",
-  "guessmax": "10",
-  "nodeneeded": "5",
+  "nofnodes": 1,
+  "pphinstance": 0.79,
+  "minuser": 5,
+  "guessmax": 10,
+  "nodeneeded": 5,
   "minuserpernode": 5
 }
 
@@ -86,6 +86,10 @@ with st.form("costinmonth"):
 
 	if submitted:
 		costinmonth = math.ceil((gpueuw2a["nodeneeded"] * hours * days * 4.345 * gpueuw2a["pphinstance"]))
+		costinmonth = math.ceil((gpueuw2b["nodeneeded"] * hours * days * 4.345 * gpueuw2b["pphinstance"]))
+		costinmonth = math.ceil((poolinfra["nodeneeded"] * hours * days * 4.345 * poolinfra["pphinstance"]))
+		costinmonth = math.ceil((poolmicroservicescpu["nodeneeded"] * hours * days * 4.345 * poolmicroservicescpu["pphinstance"]))
+		costinmonth = math.ceil((poolpulsar["nodeneeded"] * hours * days * 4.345 * poolpulsar["pphinstance"]))
 		st.text("Cost in a month is {}.".format(costinmonth))
 		totalcost[costinmonth] = costinmonth
 		st.text("Cost in a month is {}.".format(totalcost))
