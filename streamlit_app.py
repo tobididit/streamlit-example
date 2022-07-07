@@ -92,7 +92,7 @@ with st.form("costinmonth"):
 		cme = math.ceil((poolpulsar["nodeneeded"] * hours * days * 4.345 * poolpulsar["pphinstance"]))
 
 		st.text("Cost in a month is {}.".format(cma + cmb + cmc + cmd + cme))
-		totalcost[costinmonth] = costinmonth
+		totalcost[cma + cmb + cmc + cmd + cme] = costinmonth
 		st.text("Cost in a month is {}.".format(totalcost))
 
 
