@@ -93,7 +93,7 @@ with st.form("costinmonth"):
 
 		st.text("Cost in a month is {}.".format(cma + cmb + cmc + cmd + cme))
 		totalcost[cma + cmb + cmc + cmd + cme] = cma + cmb + cmc + cmd + cme
-		st.text("Cost in a month is {}.".format(totalcost))
+		#st.text("Cost in a month is {}.".format(totalcost))
 
 
 	# first argument takes the titleof the selectionbox
