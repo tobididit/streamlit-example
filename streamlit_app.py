@@ -63,7 +63,7 @@ with st.form("costinmonth"):
 }
 
 
-	users = st.number_input("guess how many users?")
+	users = st.number_input("how many users?")
 
 # slider
 
@@ -80,7 +80,7 @@ with st.form("costinmonth"):
 	days = st.slider("How many days in a week", 1, 7)
 	st.text('Selected: {}'.format(days))
 
-	procedurelength = st.number_input("What is the proocedure length in hours?")
+	procedurelength = st.number_input("What is the procedure length in hours?")
 
 	submitted = st.form_submit_button("Submit")
 
