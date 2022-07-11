@@ -95,8 +95,8 @@ with st.form("costinmonth"):
 		totalcost[cma + cmb + cmc + cmd + cme] = cma + cmb + cmc + cmd + cme
 		st.text("Procedures is {}.".format(users * hours * days * 4.345 / 0.5))
 		
-		#st.text("Cost in a month is {}.".format(totalcost))
-st.table(([['Alice', 24], ['Bob', 19]], headers=['Name', 'Age']))
+		st.text("Cost in a month is {}.".format(totalcost))
+st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 		
 		
 
