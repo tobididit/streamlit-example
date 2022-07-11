@@ -96,7 +96,7 @@ with st.form("costinmonth"):
 		st.text("Procedures is {}.".format(users * hours * days * 4.345 / 0.5))
 		
 		st.text("Cost in a month is {}.".format(totalcost))
-st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
+st.metric(label="Gpu-eu-w2a", value="70 °F", delta="1.2 °F")
 		
 		
 
