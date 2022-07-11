@@ -96,7 +96,7 @@ with st.form("costinmonth"):
 		st.text("Procedures is {}.".format(users * hours * days * 4.345 / 0.5))
 		
 		#st.text("Cost in a month is {}.".format(totalcost))
-st.table(tabulate([['Alice', 24], ['Bob', 19]], headers=['Name', 'Age']))
+st.table(([['Alice', 24], ['Bob', 19]], headers=['Name', 'Age']))
 		
 		
 
