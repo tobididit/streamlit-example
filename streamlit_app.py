@@ -111,8 +111,9 @@ with st.form("costinmonth"):
 
 st.title("Cloud Cost Calculator")
 	
-st.metric(label="Gpu-eu-w2a", value="70")
-st.metric(label="Gpu-eu-w2b", value="70")
+col1, col2, col3, col4, col5 = st.columns(5)
+col1.metric("gpu-eu-w2a", "70",)
+
 		
 		
 
