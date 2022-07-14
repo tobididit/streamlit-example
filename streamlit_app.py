@@ -97,6 +97,7 @@ with st.form("costinmonth"):
 		
 		st.text("Cost in a month is {}.".format(totalcost))
 		
+		st.title("Cloud Cost Calculator")
 		
 		col1, col2, col3 = st.columns(3)
 
