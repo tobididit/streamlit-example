@@ -107,7 +107,7 @@ with st.form("costinmonth"):
 		
 		with col2:
    	         st.header("gpu-eu-w2a")
-		st.subheader("5")
+		st.subheader("8")
 
 
 	
