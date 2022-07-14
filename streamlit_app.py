@@ -95,11 +95,11 @@ with st.form("costinmonth"):
 		totalcost[cma + cmb + cmc + cmd + cme] = cma + cmb + cmc + cmd + cme
 		st.text("Procedures is {}.".format(users * hours * days * 4.345 / 0.5))
 		
-		st.text("Cost in a month is {}.".format(totalcost))
+# 		st.text("Cost in a month is {}.".format(totalcost))
 		
 		
 
-st.title("Total Node Needed")
+st.header("Total Node Needed")
 	
 col1, col2, col3, col4, col5 = st.columns(5)
 col1.metric("Gpu-EU-W2b", "75")
