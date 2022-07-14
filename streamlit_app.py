@@ -112,8 +112,9 @@ with st.form("costinmonth"):
 st.title("Cloud Cost Calculator")
 	
 col1, col2, col3, col4, col5 = st.columns(5)
-col1.metric("gpu-eu-w2a", "70",)
-col1.metric("gpu-eu-w2a", "70",)
+col1.metric("Temperature", "70 °F", "1.2 °F")
+col2.metric("Wind", "9 mph", "-8%")
+col3.metric("Humidity", "86%", "4%")
 
 		
 		
