@@ -109,9 +109,9 @@ with st.form("costinmonth"):
    	         st.caption("gpu-eu-w2b")
 		st.caption("8")
 
-
+st.title("Cloud Cost Calculator")
 	
-st.metric(label="Gpu-eu-w2a", value="70 °F", delta="1.2 °F")
+st.metric(label="Gpu-eu-w2a", value="70")
 		
 		
 
