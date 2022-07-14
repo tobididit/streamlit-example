@@ -99,14 +99,14 @@ with st.form("costinmonth"):
 		
 		
 
-st.title("Cloud Cost Calculator")
+st.title("Total Node Needed")
 	
 col1, col2, col3, col4, col5 = st.columns(5)
-col1.metric("Gpu-EU-W2b", "70 °F", "1.2 °F")
-col2.metric("Gpu-EU-W2b", "9 mph", "-8%")
-col3.metric("Pool-Infra", "86%", "4%")
-col4.metric("Pool-Micro-Services-Cpu", "86%", "4%")
-col5.metric("Pool-Pulsar", "86%", "4%")
+col1.metric("Gpu-EU-W2b", "75")
+col2.metric("Gpu-EU-W2b", "50")
+col3.metric("Pool-Infra", "17")
+col4.metric("Pool-Micro-Services-Cpu", "10")
+col5.metric("Pool-Pulsar", "20")
 
 		
 		
