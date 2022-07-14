@@ -106,7 +106,7 @@ with st.form("costinmonth"):
 		st.caption("5")
 		
 		with col2:
-   	         st.caption("gpu-eu-w2a")
+   	         st.caption("gpu-eu-w2b")
 		st.caption("8")
 
 
