@@ -112,6 +112,7 @@ with st.form("costinmonth"):
 st.title("Cloud Cost Calculator")
 	
 st.metric(label="Gpu-eu-w2a", value="70")
+st.metric(label="Gpu-eu-w2b", value="70")
 		
 		
 
