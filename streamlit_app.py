@@ -102,12 +102,12 @@ with st.form("costinmonth"):
 		col1, col2, col3 = st.columns(3)
 
 		with col1:
-   	         st.header("gpu-eu-w2a")
-		st.subheader("5")
+   	         st.caption("gpu-eu-w2a")
+		st.caption("5")
 		
 		with col2:
-   	         st.header("gpu-eu-w2a")
-		st.subheader("8")
+   	         st.caption("gpu-eu-w2a")
+		st.caption("8")
 
 
 	
