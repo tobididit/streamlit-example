@@ -95,6 +95,10 @@ with st.form("costinmonth"):
 		totalcost[cma + cmb + cmc + cmd + cme] = cma + cmb + cmc + cmd + cme
 		st.text("Procedures is {}.".format(users * hours * days * 4.345 / 0.5))
 		st.text("GpuEUW2a Node needed   is {}.".format(users / 1.333333333))
+		st.text("GpuEUW2b Node needed   is {}.".format(users / 2))
+		st.text("poolinfra Node needed   is {}.".format(users / 6))
+		st.text("poolmicroservicescpu Node needed   is {}.".format(users / 10))
+		st.text("poolpulsar Node needed   is {}.".format(users / 5))
 		
 # 		st.text("Cost in a month is {}.".format(totalcost))
 		
