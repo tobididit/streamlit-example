@@ -101,7 +101,7 @@ with st.form("costinmonth"):
 		st.text("poolpulsar Node needed   is {}.".format(users / 5))
 		
 		col1, col2, col3, col4, col5 = st.columns(5)
-	col1.metric = math.ceil("Gpu-EU-W2a", "users / 1.333333333")
+	col1.metric = math.ceil("Gpu-EU-W2a", users / 1.333333333)
 col2.metric("Gpu-EU-W2b", "50")
 col3.metric("Pool-Infra", "17")
 col4.metric("Pool-Micro-Services-Cpu", "10")
