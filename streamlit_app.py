@@ -94,6 +94,7 @@ with st.form("costinmonth"):
 		st.text("Cost in a month is {}.".format(cma + cmb + cmc + cmd + cme))
 		totalcost[cma + cmb + cmc + cmd + cme] = cma + cmb + cmc + cmd + cme
 		st.text("Procedures is {}.".format(users * hours * days * 4.345 / 0.5))
+		st.text("GpuEUW2a NODE NEEDED   is {}.".format(users / 1.333333333))
 		
 # 		st.text("Cost in a month is {}.".format(totalcost))
 		
