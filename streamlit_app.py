@@ -100,6 +100,13 @@ with st.form("costinmonth"):
 		st.text("poolmicroservicescpu Node needed   is {}.".format(users / 10))
 		st.text("poolpulsar Node needed   is {}.".format(users / 5))
 		
+		col1, col2, col3, col4, col5 = st.columns(5)
+	col1.metric = math.ceil("Gpu-EU-W2a", "users / 1.333333333")
+col2.metric("Gpu-EU-W2b", "50")
+col3.metric("Pool-Infra", "17")
+col4.metric("Pool-Micro-Services-Cpu", "10")
+col5.metric("Pool-Pulsar", "20")
+		
 # 		st.text("Cost in a month is {}.".format(totalcost))
 		
 		
